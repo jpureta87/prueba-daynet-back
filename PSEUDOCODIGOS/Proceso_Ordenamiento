@@ -1,0 +1,36 @@
+Proceso Ordenamiento
+	
+	Definir temporal, array, i, n, z Como Entero;
+	
+	Dimension array[14];
+	
+	array[0] <- 54;
+	array[1] <- 53;
+	array[2] <- 2;
+	array[3] <- 1;
+	array[4] <- 5;
+	array[5] <- 98;
+	array[6] <- 73;
+	array[7] <- 86;
+	array[8] <- 98;
+	array[9] <- 94;
+	array[10] <- 1;
+	array[11] <- 2;
+	array[12] <- 3;
+	array[13] <- 2;
+	
+	para i = 0 hasta 13 Hacer
+		para n = 0 hasta 12 Hacer
+			si array[n] > array[n+1] Entonces
+				temporal = array[n];
+				array[n] = array[n+1];
+				array[n+1] = temporal;
+			FinSi
+		FinPara
+	FinPara
+	
+	para z = 0 hasta 13 Hacer
+		Escribir array[z];
+	FinPara
+	
+FinProceso
